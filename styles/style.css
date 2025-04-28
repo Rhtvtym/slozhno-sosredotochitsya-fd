@@ -1,5 +1,134 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
+  display: block;
+  background-image: var(--background-image-dark);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-right: 10px;
+  padding-left: 10px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+
+.header {
+  background-image: url(../images/cover-image-dark.png);
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-block-size: 100vh;
+  min-inline-size: 355px;
+}
+
+.title-decor {
+  /*grid-row-start: 3;
+  grid-row-end: 4;
+  /*justify-items: stretch;*/
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000028;
+  background-color: #ff0070;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sing-decor {
+  position: relative;
+  padding-right: 27px;
+  padding-bottom: 40px;
+  padding-top: 14px;
+}
+
+.sing-decor::after {
+  position: absolute;
+  content: "";
+  border: 4px solid #ff0070 ;
+  border-radius: 50%;
+  fill: #ff0070;
+  box-shadow: 0 0 4px 2px #ff0070;
+  left:43px;
+  top: 20px;
+
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  content: "";
+  border-right: 1px solid #ff0070;
+  border-top: 1px solid #ff0070;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  border-left: 1px solid #ff0070;
+  border-bottom: 1px solid #ff0070;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+h1 {
+grid-row-start: 2;
+grid-row-end: 3;
+font-size: var(--h1-font-size);
+/* Для мобильных */
+font-family: var(--font-family);
+font-weight: var(--font-weight-bold);
+line-height: 83%;
+color: #db00ff;
+text-shadow: 4px 4px #ff0070;
+}
+
+.header__theme-menu {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-items: end;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #ff0070;
+  background-color: inherit;
+}
+
+.header__theme-menu-list {
+
+}
+
+.header__theme-menu-item {
+  padding: 0px 13px;
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_active {
+
+}
+
+

@@ -5,7 +5,7 @@
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
   --accent-color:#000028;
-  --decor-background-color: #ff0070;
+  --decor-bg: #ff0070;
   --font-weight-bold: 700;
   --font-size: 18px;
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

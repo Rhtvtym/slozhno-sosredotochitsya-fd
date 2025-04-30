@@ -4,12 +4,13 @@
 */
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
-  --accent-color:#000028;
-  --decor-bg: #ff0070;
+  --accent-color: #ff0070;
+  --h-color: #000028;
   --font-weight-bold: 700;
   --font-size: 18px;
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --background-image-dark: url(../images/cover-image-dark.png);
+  --article-color: #f1b2ce;
 
 }
 

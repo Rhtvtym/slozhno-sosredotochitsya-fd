@@ -7,6 +7,8 @@
   background-attachment: fixed;
   padding-right: 10px;
   padding-left: 10px;
+  font-family: var(--font-family);
+  font-size: 18px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -27,11 +29,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--accent-color);
-  background-color: var(--decor-bg);
+  color: var(--h-color);
+  background-color: var(--accent-color);
   align-self: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .sing-decor {
@@ -44,10 +44,10 @@
 .sing-decor::after {
   position: absolute;
   content: "";
-  border: 4px solid var(--decor-bg) ;
+  border: 4px solid var(--accent-color);
   border-radius: 50%;
-  fill: var(--decor-bg);
-  box-shadow: 0 0 4px 2px var(--decor-bg);
+  fill: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(---accent-color);
   left:43px;
   top: 20px;
 
@@ -62,8 +62,8 @@
   top: 10px;
   right: 0px;
   content: "";
-  border-right: 1px solid var(--decor-bg);
-  border-top: 1px solid var(--decor-bg);
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -73,8 +73,8 @@
   left: 0px;
   bottom: 10px;
   content: "";
-  border-left: 1px solid var(--decor-bg);
-  border-bottom: 1px solid var(--decor-bg);
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -88,7 +88,7 @@ font-family: var(--font-family);
 font-weight: var(--font-weight-bold);
 line-height: 83%;
 color: #db00ff;
-text-shadow: 4px 4px var(--decor-bg);
+text-shadow: 4px 4px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -100,7 +100,7 @@ text-shadow: 4px 4px var(--decor-bg);
   font-size: 18px;
   line-height: 100%;
   text-align: center;
-  color: var(--decor-bg);
+  color: var(--accent-color);
   background-color: inherit;
 }
 
@@ -134,15 +134,52 @@ text-shadow: 4px 4px var(--decor-bg);
 
 }
 
-.content-section {
+.main {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+color: #f1b2ce;
+}
+
+.section {
   display: grid;
   
 }
 
-.img-section {
+article {
   display: grid;
+  margin-bottom: 30px;
+}
+
+h2, h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--h-color);
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+.img-section {
+  width: 100%;
   object-fit: cover;
   object-position: center;
+  padding-bottom: 10px;
+
 }
 .footer {
   display: grid;
@@ -151,7 +188,7 @@ text-shadow: 4px 4px var(--decor-bg);
 }
 
 .footer-content {
-  text-shadow: 2px 2px var(--decor-bg);
+  text-shadow: 2px 2px var(--accent-color);
 }
 
 @media (width > 768px) {

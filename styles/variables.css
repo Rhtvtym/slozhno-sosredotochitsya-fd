@@ -9,7 +9,8 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-size: 18px;
-  --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --h1-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --h1-font-size-desctop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --background-image-dark: url(../images/cover-image-dark.png);
   --article-color: #f1b2ce;
   --padding: 10px;

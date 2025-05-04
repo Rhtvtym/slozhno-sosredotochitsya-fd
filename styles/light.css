@@ -5,7 +5,12 @@
 */
 
 :root.theme-light {
-
+  --accent-color: #ff8dcb;
+  --h-color: #353430;
+  --background-image: url(../images/cover-image-light.png);
+  --header-bg-image: url(../image)
+  --article-color: #353430;
+  --link-color: #ff8dcb;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

@@ -5,6 +5,11 @@
 */
 
 :root.theme-dark {
+  --accent-color: #ff0070;
+  --h-color: #000028;
+  --background-image-dark: url(../images/cover-image-dark.png);
+  --article-color: #f1b2ce;
+  --link-color:
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

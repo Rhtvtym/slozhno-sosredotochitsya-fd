@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   display: block;
-  background-image: var(--background-image);
+  background-image: var(--bg-image-main);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -9,20 +9,21 @@
   padding-left: 10px;
   padding-top: 10px;
   font-family: var(--font-family);
-  font-size: 18px;
+  font-size: var(--font-size);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 
 .header {
-  background-image: var(--header-bg-image);
+  background-image: var(--bg-image-header);
   background-position: center;
   background-size: cover;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-block-size: 100vh;
   min-inline-size: 355px;
-  margin-bottom: 30px;
+  min-block-size: 648px;
+  margin-bottom: 40px;
 }
 
 .title-decor {
@@ -31,10 +32,10 @@
   /*justify-items: stretch;*/
   
   font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  
   line-height: 130%;
-  color: var(--h-color);
+  color: var(--color);
   background-color: var(--accent-color);
   align-self: center;
   
@@ -47,13 +48,13 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: var(--font-weight-normal);
+  
   line-height: 139%;
   text-align: center;
-  color: #ff0070;
+  color: var(--accent-color);
   right: 10px;
-  top: 13px;
+  top: 0px;
 }
 
 .sing-decor::after {
@@ -71,7 +72,7 @@
 
 .decorated-zone::before {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 0px;
   content: "";
   border-right: 1px solid var(--accent-color);
@@ -83,7 +84,7 @@
 .decorated-zone::after {
   position: absolute;
   left: 0px;
-  bottom: 10px;
+  bottom: 0px;
   content: "";
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
@@ -94,12 +95,12 @@
 h1, h5 {
 grid-row-start: 2;
 grid-row-end: 3;
-font-size: var(--h1-font-size);
+font-size: var(--h1-font-size-mobile);
 /* Для мобильных */
 font-family: var(--font-family);
 font-weight: var(--font-weight-bold);
 line-height: 83%;
-color: #db00ff;
+color: var(--h1-color);
 text-shadow: 4px 4px var(--accent-color);
 }
 
@@ -111,15 +112,12 @@ text-shadow: 4px 4px var(--accent-color);
   align-items: end;
   justify-content: center;
   font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: var(--font-weight-normal);
   line-height: 100%;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--header-menu-color);
   background-color: inherit;
 }
-
-
 
 .header__theme-menu-list {
   display: flex;
@@ -128,55 +126,53 @@ text-shadow: 4px 4px var(--accent-color);
 }
 
 .header__theme-menu-item {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
   text-align: center;
-  color: #ff0070;
 }
 
 .header__theme-menu-button {
+  
   background-color: transparent;
-  border: 1px solid #ff0070;
-  padding: 2px 7px;
+  border: none;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .header__theme-menu-button:hover {
-  border: ;
+  border: 1px solid var(--color-border-hover);
 }
 
-.header__theme-menu-button:focus {
-  border-bottom: 1px solid #ff0070;
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--header-menu-color);
 }
 
 .header__theme-menu-button_type_light {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__theme-menu-button_type_dark {
-
+ 
 }
 
 .header__theme-menu-button_type_auto {
-
+  
 }
 
 .header__theme-menu-button_active {
-
+  border: 1px solid var(--header-menu-color);
+  pointer-events: none
 }
 
 .main {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 18px;
-line-height: 130%;
-color: #f1b2ce;
+  line-height: 130%;
+  color: var(--article-color)
 }
 
 .section {
   display: grid;
-  
 }
 
 article {
@@ -184,17 +180,30 @@ article {
   margin-bottom: 30px;
 }
 
+.text-link {
+text-shadow: 2px 2px var(--accent-color);
+text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration-line: underline;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--article-color);
+}
+
 h2, h3 {
   font-weight: var(--font-weight-bold);
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 130%;
-  color: var(--accent-color);
+  color: var(--h2-color);
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h3 {
-  color: var(--h-color);
+  color: var(--color);
 }
 
 h4 {
@@ -216,7 +225,8 @@ h4 {
 .footer {
   display: grid;
   justify-items: center;
-  min-block-size: 668px;
+  min-block-size: 648px;
+  margin-top: 40px;
 }
 
 .footer-content {
@@ -238,7 +248,7 @@ h4 {
   }
 
   h1, h5 {
-    font-size: var(--h1-font-size-desctop);
+    font-size: var(--h1-font-size-desktop);
   }
 
   .decorated-zone::before {
@@ -300,14 +310,12 @@ h4 {
     margin-bottom: 0;
   }
 
-  .focus-picture {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+  
 
   .img-section {
     height: 100%;
     padding: 0;
+   
   }
 
   .sunset {

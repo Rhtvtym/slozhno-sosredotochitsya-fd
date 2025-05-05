@@ -6,11 +6,15 @@
 
 :root.theme-light {
   --accent-color: #ff8dcb;
-  --h-color: #353430;
-  --background-image: url(../images/cover-image-light.png);
-  --header-bg-image: url(../image)
+  --color: #353430;
+  --header-menu-color: #353430;
+  --h1-color: #ffc2e6;
+  --h2-color: #353430;
+  --bg-image-main: url(../images/cover-image-light.png);
+  --bg-image-header: url(../images/cover-image-light.png); 
   --article-color: #353430;
-  --link-color: #ff8dcb;
+  --color-border-hover: rgba(50, 49, 45, 0.4);
+  
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -24,6 +28,34 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+  --color: #353430;
+  --header-menu-color: #353430;
+  --h1-color: #ffc2e6;
+  --h2-color: #353430;
+  --bg-image-main: url(../images/cover-image-light.png);
+  --bg-image-header: url(../images/cover-image-light.png);
+  --article-color: #353430;
+  --color-border-hover: rgba(50, 49, 45, 0.4);
+
+  }
+
+  .theme-light {
+    .sing-decor {
+      display: none;
+    }
+  }
+
+  .theme-auto {
+    --bg-image-header: url(../images/cover-image-light.png);
+
+    .sing-decor {
+      display: none;
+    }
+  }
+}
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }

@@ -158,7 +158,7 @@
   display: grid;
 }
 
-article {
+.content-section {
   display: grid;
   margin-bottom: 30px;
 }

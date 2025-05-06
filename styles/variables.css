@@ -15,10 +15,10 @@
   --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --bg-image-main: url(../images/cover-image-dark.png);
-  --bg-image-header: url(../images/cover-image.png);
   --article-color: #f1b2ce;
   --padding: 10px;
   --gap: 20px;
   --color-border-hover: rgba(255, 0, 112, 0.4);
+  --corner-color: #ff0070;
 }
 

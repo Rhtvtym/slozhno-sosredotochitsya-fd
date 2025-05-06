@@ -11,8 +11,8 @@
   --title-color: #db00ff;
   --question-color: #ff0070;
   --bg-image-main: url(../images/cover-image-dark.png);
-  --bg-image-header: url(../images/cover-image.png);
   --article-color: #f1b2ce;
+  --corner-color: #ff0070;
 }
 
 .theme-dark .page {

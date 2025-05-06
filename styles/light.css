@@ -11,9 +11,9 @@
   --title-color: #ffc2e6;
   --question-color: #353430;
   --bg-image-main: url(../images/cover-image-light.png);
-  --bg-image-header: url(../images/cover-image-light.png); 
   --article-color: #353430;
   --color-border-hover: rgba(50, 49, 45, 0.4);
+  --corner-color: #353430;
 }
 
 .theme-light {
@@ -30,9 +30,9 @@
     --title-color: #ffc2e6;
     --question-color: #353430;
     --bg-image-main: url(../images/cover-image-light.png);
-    --bg-image-header: url(../images/cover-image-light.png);
     --article-color: #353430;
     --color-border-hover: rgba(50, 49, 45, 0.4);
+    --corner-color: #353430;
   }
 
   

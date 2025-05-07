@@ -19,8 +19,10 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-inline-size: 355px;
-  min-block-size: 648px;
-  margin-bottom: 40px;
+  min-block-size: 668px;
+  height: 100vh;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .title-decor {
@@ -74,7 +76,7 @@
 .decorated-zone::after {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: 20px;
   content: "";
   border-left: 1px solid var(--corner-color);
   border-bottom: 1px solid var(--corner-color);
@@ -228,6 +230,7 @@
   .header {
       min-block-size: 1024px;
       padding-right: 20px;
+      padding-bottom: 0;
       margin-bottom: 30px;
   }
 

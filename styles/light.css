@@ -35,21 +35,13 @@
     --corner-color: #353430;
   }
 
-  
-  .sing-decor {
-    display: none;
-  }
-  
-
   .theme-auto {
-    background-image: var(--bg-image-header)
-    ;
-
     .sing-decor {
       display: none;
     }
   }
 }
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
